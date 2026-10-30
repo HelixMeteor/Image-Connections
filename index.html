@@ -366,7 +366,7 @@ function finish(won) {
   $("controls").hidden = true;
   $("endMsg").textContent = won
     ? (mistakes === 0 ? "Helluva Job! 🎉" : "Thank You Yellow Jackets 🎉")
-    : "Next time! Here are the answers.";
+    : "Next time Yellow Jacket! Here are the answers.";
   $("shareGrid").innerHTML = history.map(r => r.map(g => EMOJI[g]).join("")).join("<br>");
   $("end").hidden = false;
 }
